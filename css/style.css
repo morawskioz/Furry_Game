@@ -1,10 +1,12 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 section#score {
@@ -17,38 +19,36 @@ section#score {
   margin: 1em auto;
 }
 
-#board  > div {    
+#board > div {
   border: 1px solid black;
   float: left;
   width: 64px;
   height: 64px;
 }
 
-
 section#score div {
   width: 10em;
   height: 3em;
   text-align: center;
   padding: 0.5em;
-  background-color: rgba(211,211,211, 0.75);
+  background-color: rgba(211, 211, 211, 0.75);
   border: 1px solid lightgray;
   border-radius: 1px;
   box-shadow: 1px 1px 5px 1px lightgray;
   margin: 1em auto;
 }
 
-
-
-
 .furry {
-  background-image: url('../images/furry.png');
+  background-image: url(../images/batman2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 .coin {
-  background-image: url('../images/coin.png');
+  background-image: url("../images/kryptonite2.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
 section#over {
@@ -75,7 +75,7 @@ section#over pre {
   display: none;
 }
 
-.game__over {
+.gameOver {
   content: "";
   width: 100vw;
   height: 100vh;
@@ -86,6 +86,7 @@ section#over pre {
   align-items: center;
   justify-content: center;
   opacity: 0;
+  pointer-events: none;
 }
 .score {
   color: white;
@@ -94,4 +95,15 @@ section#over pre {
 }
 .opacity {
   opacity: 1;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
 }
