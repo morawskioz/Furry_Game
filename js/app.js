@@ -20,10 +20,10 @@ const keyDownHandler = e => {
   switch (e.code) {
     case "Enter":
       game.startGame()
-      break;
+      break
     case "Space":
       game.pauseGame()
-      break;
+      break
   }
 }
 
