@@ -1,43 +1,26 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   overflow-y: hidden;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
-
 section#score {
   width: 100%;
 }
-
 #board {
   width: 640px;
   height: 640px;
   margin: 1em auto;
 }
-
 #board > div {
   border: 1px solid black;
   float: left;
   width: 64px;
   height: 64px;
 }
-
-section#score div {
-  width: 10em;
-  height: 3em;
-  text-align: center;
-  padding: 0.5em;
-  background-color: rgba(211, 211, 211, 0.75);
-  border: 1px solid lightgray;
-  border-radius: 1px;
-  box-shadow: 1px 1px 5px 1px lightgray;
-  margin: 1em auto;
-}
-
 .furry {
   background-image: url(../images/batman2.png);
   background-repeat: no-repeat;
@@ -50,7 +33,6 @@ section#score div {
   background-size: contain;
   background-position: center;
 }
-
 section#over {
   position: fixed;
   width: 100%;
@@ -61,7 +43,6 @@ section#over {
   padding: 10px;
   background-color: rgba(255, 255, 0, 0.75);
 }
-
 section#over pre {
   display: inline-block;
   width: 100%;
@@ -70,11 +51,9 @@ section#over pre {
   font-weight: bolder;
   color: brown;
 }
-
 .invisible {
   display: none;
 }
-
 .gameOver {
   content: "";
   width: 100vw;
@@ -96,14 +75,46 @@ section#over pre {
 .opacity {
   opacity: 1;
 }
-
 .button {
   padding: 10px;
   border-radius: 5px;
   margin: 5px;
 }
-
 .button-container {
   display: flex;
   justify-content: center;
+}
+.heading {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 50px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 1em;
+}
+.card {
+  background-color: rgba(211, 211, 211, 0.75);
+  border: 1px solid lightgray;
+  border-radius: 1px;
+  box-shadow: 1px 1px 5px 1px lightgrey;
+}
+.counter {
+  width: 135px;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.instructions {
+  max-width: 35vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.instructions-title {
+  margin: 0
 }

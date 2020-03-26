@@ -46,7 +46,8 @@ function Game() {
     self.checkCoinCollision()
   }
   this.hideVisibleFurry = function() {
-    document.querySelector("div.furry").classList.remove("furry")
+    const furry = document.querySelector("div.furry")
+    furry && furry.classList.remove("furry")
   }
   this.turnFurry = function(event) {
     switch (event.which) {

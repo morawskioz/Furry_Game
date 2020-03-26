@@ -1,136 +1,146 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Javascript Furry game</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <div class="gameOver">
-      <div class="score">
-        GAME OVER!<br /><br />
-        Your final score <strong> 0 </strong><br /><br />
-        Press F5 if you want to play again!
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Javascript Furry game</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="gameOver">
+    <div class="score">
+      GAME OVER!<br /><br />
+      Your final score <strong> 0 </strong><br /><br />
+      Press F5 if you want to play again!
     </div>
+  </div>
 
-    <section id="score">
-      <div>
-        SCORE<br />
-        <strong>0</strong>
-      </div>
-    </section>
-
-    <section id="board">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div class="furry"></div>
-    </section>
-    <div class="button-container">
-      <button id="pause_button" class="button">Pause</button>
-      <button id="start_button" class="button">Start</button>
+  <section class="heading">
+    <div class="counter card" id="score">
+      SCORE<br />
+      <strong>0</strong>
     </div>
+    <div class="instructions card">
+      <h4 class="instructions-title">User your keyboard arrow to move!</h4>
+      <span>&#8592; to move left</span>
+      <span>&#8593; to move up</span>
+      <span>&#8594; to move right</span>
+      <span>&#8595; to move down</span>
+      <span><strong> Enter </strong> to start and <strong> Space </strong> to pause</span>
+    </div>
+  </section>
 
-    <section id="over" class="invisible"></section>
+  <section id="board">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="furry"></div>
+  </section>
+  <div class="button-container">
+    <button id="pause_button" class="button">Pause</button>
+    <button id="start_button" class="button">Start</button>
+  </div>
 
-    <script src="dist/main.js"></script>
-  </body>
+  <section id="over" class="invisible"></section>
+
+  <script src="dist/main.js"></script>
+</body>
+
 </html>
